@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:orientation="vertical" 
+    android:id="@+id/layout_container">
+
+    <LinearLayout
+        android:id="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#f5f5f5" >
+	    <Button
+            android:id="@+id/img_left"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:background="@drawable/left"
+            android:clickable="true"
+           
+             />
+   	    <Button
+            android:id="@+id/img_refresh"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="70dp"      
+            android:background="@drawable/refresh"
+            android:clickable="true"
+             />
+
+   	    <Button
+   	        android:id="@+id/img_right"
+   	        android:layout_width="60dp"
+   	        android:layout_height="30dp"
+   	        android:background="@drawable/right"
+   	        android:layout_marginLeft="60dp"
+   	        />
+       
+    </LinearLayout>
+	<LinearLayout
+	    android:layout_above="@+id/tv_tournament"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+    	android:background="#000000"
+        android:orientation="vertical" >
+    </LinearLayout>
+</LinearLayout>

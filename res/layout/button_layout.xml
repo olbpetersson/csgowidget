@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corners_upper_and_lower"
+    
+    >
+ <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_corners_upper" >
+      <Button
+            android:id="@+id/img_left"
+            android:layout_width="96dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/left"
+            android:clickable="true"
+            android:layout_margin="8dp"
+             />
+        <Button
+            android:id="@+id/img_refresh"
+            android:layout_width="96dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="70dp"      
+            android:background="@drawable/refresh"
+            android:layout_margin="8dp"            
+            android:clickable="true"
+             />
+
+        <Button
+            android:id="@+id/img_right"
+            android:layout_width="96dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/right"
+            android:layout_margin="8dp"
+            />
+       
+    </LinearLayout>
+  <LinearLayout
+      android:layout_above="@+id/tv_tournament"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+      android:background="#000000"
+        android:orientation="vertical" >
+    </LinearLayout>
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="#F5F5F5"
+    android:id="@+id/rl_button"
+     >
+  <LinearLayout
+      android:layout_above="@+id/tv_tournament"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+      android:background="#000000"
+        android:orientation="vertical" >
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_tournament"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#CC0000"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_starts_at"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_team_labels"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textColor="#323232"
+        android:gravity="center"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_team_labels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tournament"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#191919"
+        android:gravity="center"
+        android:typeface="monospace" />
+  
+  <LinearLayout
+      android:id="@+id/lower_delimiter"
+      android:layout_below="@+id/tv_starts_at"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+      android:background="#000000"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    
+    
+
+</RelativeLayout>
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="#F5F5F5"
+    android:id="@+id/rl_button2"
+     >
+  <LinearLayout
+      android:layout_above="@+id/tv_tournament2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+      android:background="#000000"
+        android:orientation="vertical" >
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_tournament2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#CC0000"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_starts_at2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_team_labels2"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textColor="#323232"
+        android:gravity="center"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_team_labels2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tournament2"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#191919"
+        android:gravity="center"
+        android:typeface="monospace" />
+  
+  <LinearLayout
+      android:id="@+id/lower_delimiter2"
+      android:layout_below="@+id/tv_starts_at2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+      android:background="#000000"
+        android:orientation="vertical" >
+    </LinearLayout>
+</RelativeLayout>
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="#F5F5F5"
+    android:id="@+id/rl_button3"
+     >
+  <LinearLayout
+      android:layout_above="@+id/tv_tournament3"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+      android:background="#000000"
+        android:orientation="vertical" >
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_tournament3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#CC0000"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_starts_at3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_team_labels3"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textColor="#323232"
+        android:gravity="center"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_team_labels3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tournament3"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#191919"
+        android:gravity="center"
+        android:typeface="monospace" />
+  
+  <LinearLayout
+      android:id="@+id/lower_delimiter3"
+      android:layout_below="@+id/tv_starts_at3"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+      android:background="#000000"
+        android:orientation="vertical" >
+    </LinearLayout>
+</RelativeLayout>
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="#F5F5F5"
+    android:id="@+id/rl_button4"
+     >
+  <LinearLayout
+      android:layout_above="@+id/tv_tournament4"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+      android:background="#000000"
+        android:orientation="vertical" >
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_tournament4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#CC0000"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_starts_at4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_team_labels4"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textColor="#323232"
+        android:gravity="center"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_team_labels4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tournament4"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#191919"
+        android:gravity="center"
+        android:typeface="monospace" />
+  
+  <LinearLayout
+      android:id="@+id/lower_delimiter4"
+      android:layout_below="@+id/tv_starts_at4"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+      android:background="#000000"
+        android:orientation="vertical" >
+    </LinearLayout>
+</RelativeLayout>
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="#F5F5F5"
+    android:id="@+id/rl_button5"
+     >
+  <LinearLayout
+      android:layout_above="@+id/tv_tournament5"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+      android:background="#000000"
+        android:orientation="vertical" >
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_tournament5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#CC0000"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_starts_at5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_team_labels5"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textColor="#323232"
+        android:gravity="center"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_team_labels5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tournament5"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#191919"
+        android:gravity="center"
+        android:typeface="monospace" />
+  
+  <LinearLayout
+      android:id="@+id/lower_delimiter5"
+      android:layout_below="@+id/tv_starts_at5"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+      android:background="#000000"
+        android:orientation="vertical" >
+    </LinearLayout>
+</RelativeLayout>
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="#F5F5F5"
+    android:id="@+id/rl_button6"
+     >
+  <LinearLayout
+      android:layout_above="@+id/tv_tournament6"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+      android:background="#000000"
+        android:orientation="vertical" >
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_tournament6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#CC0000"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_starts_at6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_team_labels6"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textColor="#323232"
+        android:gravity="center"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_team_labels6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tournament6"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#191919"
+        android:gravity="center"
+        android:typeface="monospace" />
+  
+  <LinearLayout
+      android:id="@+id/lower_delimiter3"
+      android:layout_below="@+id/tv_starts_at6"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+      android:background="#000000"
+        android:orientation="vertical" >
+    </LinearLayout>
+</RelativeLayout>
+
+</LinearLayout>
