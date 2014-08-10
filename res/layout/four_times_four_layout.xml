@@ -6,41 +6,47 @@
     android:background="@drawable/rounded_corners_upper_and_lower"
     
     >
- <LinearLayout
+  <LinearLayout
         android:id="@+id/header"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:orientation="horizontal"
         android:background="@drawable/rounded_corners_upper" >
-      <Button
-            android:id="@+id/img_left"
-            android:layout_width="96dp"
-            android:layout_height="48dp"
-            android:layout_weight="1"
-            android:background="@drawable/left"
-            android:clickable="true"
-            android:layout_margin="8dp"
-             />
-        <Button
-            android:id="@+id/img_refresh"
-            android:layout_width="96dp"
-            android:layout_height="48dp"
-            android:layout_weight="1"
-            android:layout_gravity="center"
-            android:layout_marginLeft="70dp"      
-            android:background="@drawable/refresh"
-            android:layout_margin="8dp"            
-            android:clickable="true"
-             />
 
-        <Button
+     <ImageButton
+         android:id="@+id/img_left"
+         android:layout_width="0dp"
+         android:background="#efefef"
+         android:adjustViewBounds="true"
+         android:layout_height="wrap_content"
+         android:layout_margin="8dp"
+         android:layout_weight="1"
+         android:src="@drawable/left"
+         android:scaleType="centerInside"
+         android:clickable="true" />
+
+      <ImageButton
+          android:id="@+id/img_refresh"
+          android:layout_width="0dp"
+          android:background="#efefef"
+          android:adjustViewBounds="true"
+          android:layout_height="wrap_content"
+          android:layout_margin="8dp"
+          android:layout_weight="1"
+          android:src="@drawable/refresh"
+          android:clickable="true"
+          android:scaleType="centerInside" />
+
+        <ImageButton
             android:id="@+id/img_right"
-            android:layout_width="96dp"
-            android:layout_height="48dp"
-            android:layout_weight="1"
-            android:background="@drawable/right"
+            android:layout_width="0dp"
+            android:background="#efefef"
+            android:adjustViewBounds="true"
+            android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            />
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/right" />
        
     </LinearLayout>
   <LinearLayout
@@ -394,7 +400,7 @@
         android:typeface="monospace" />
   
   <LinearLayout
-      android:id="@+id/lower_delimiter3"
+      android:id="@+id/lower_delimiter6"
       android:layout_below="@+id/tv_starts_at6"
         android:layout_width="fill_parent"
         android:layout_height="1dp"
@@ -402,5 +408,16 @@
         android:orientation="vertical" >
     </LinearLayout>
 </RelativeLayout>
-
+ <TextView
+        android:id="@+id/tv_last_updated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Last updated: "
+        android:layout_marginTop="10dp"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:textColor="#191919"
+        android:gravity="center"
+        android:typeface="monospace" />
 </LinearLayout>

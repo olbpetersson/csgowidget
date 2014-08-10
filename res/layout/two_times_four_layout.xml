@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corners_upper_and_lower"
+    
+    >
+ <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_corners_upper" >
+
+     <ImageButton
+         android:id="@+id/img_left"
+         android:layout_width="0dp"
+         android:background="#efefef"
+         android:adjustViewBounds="true"
+         android:layout_height="wrap_content"
+         android:layout_margin="8dp"
+         android:layout_weight="1"
+         android:src="@drawable/left"
+         android:scaleType="centerInside"
+         android:clickable="true" />
+
+      <ImageButton
+          android:id="@+id/img_refresh"
+          android:layout_width="0dp"
+          android:background="#efefef"
+          android:adjustViewBounds="true"
+          android:layout_height="wrap_content"
+          android:layout_margin="8dp"
+          android:layout_weight="1"
+          android:src="@drawable/refresh"
+          android:clickable="true"
+          android:scaleType="centerInside" />
+
+        <ImageButton
+            android:id="@+id/img_right"
+            android:layout_width="0dp"
+            android:background="#efefef"
+            android:adjustViewBounds="true"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/right" />
+       
+</LinearLayout>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="2dp"
+    android:background="#000000"
+    android:orientation="vertical" >
+</LinearLayout>
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="#F5F5F5"
+    android:id="@+id/rl_button"
+     >
+  <LinearLayout
+      android:layout_above="@+id/tv_tournament"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+      android:background="#000000"
+        android:orientation="vertical" >
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_tournament"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#CC0000"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/tv_starts_at"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_team_labels"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textColor="#323232"
+        android:gravity="center"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/tv_team_labels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tournament"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:textColor="#191919"
+        android:gravity="center"
+        android:typeface="monospace" />
+  
+  <LinearLayout
+      android:id="@+id/lower_delimiter"
+      android:layout_below="@+id/tv_starts_at"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+      android:background="#000000"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    
+    
+
+</RelativeLayout>
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="#F5F5F5"
+    android:id="@+id/rl_button2"
+     >
+  <LinearLayout
+      android:layout_above="@+id/tv_tournament2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+      android:background="#000000"
+        android:orientation="vertical" >
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_tournament2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#CC0000"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/tv_starts_at2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_team_labels2"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textColor="#323232"
+        android:gravity="center"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/tv_team_labels2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tournament2"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:textColor="#191919"
+        android:gravity="center"
+        android:typeface="monospace" />
+  
+  <LinearLayout
+      android:id="@+id/lower_delimiter2"
+      android:layout_below="@+id/tv_starts_at2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+      android:background="#000000"
+        android:orientation="vertical" >
+    </LinearLayout>
+</RelativeLayout>
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="#F5F5F5"
+    android:id="@+id/rl_button3"
+     >
+  <LinearLayout
+      android:layout_above="@+id/tv_tournament3"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+      android:background="#000000"
+        android:orientation="vertical" >
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_tournament3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#CC0000"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/tv_starts_at3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_team_labels3"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textColor="#323232"
+        android:gravity="center"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_team_labels3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tournament3"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="#191919"
+        android:gravity="center"
+        android:typeface="monospace" />
+  
+  <LinearLayout
+      android:id="@+id/lower_delimiter3"
+      android:layout_below="@+id/tv_starts_at3"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+      android:background="#000000"
+        android:orientation="vertical" >
+    </LinearLayout>
+</RelativeLayout>
+ <TextView
+        android:id="@+id/tv_last_updated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Last updated: "
+        android:layout_marginTop="8dp"
+        android:textSize="7sp"
+        android:textStyle="bold"
+        android:textColor="#191919"
+        android:gravity="center"
+        android:typeface="monospace" />
+</LinearLayout>
